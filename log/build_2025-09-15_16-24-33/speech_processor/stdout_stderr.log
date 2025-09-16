@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating speech_processor.egg-info
+writing speech_processor.egg-info/PKG-INFO
+writing dependency_links to speech_processor.egg-info/dependency_links.txt
+writing entry points to speech_processor.egg-info/entry_points.txt
+writing requirements to speech_processor.egg-info/requires.txt
+writing top-level names to speech_processor.egg-info/top_level.txt
+writing manifest file 'speech_processor.egg-info/SOURCES.txt'
+reading manifest file 'speech_processor.egg-info/SOURCES.txt'
+writing manifest file 'speech_processor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/htrice/go2_ros2_curr/install/speech_processor/lib/python3.10/site-packages/speech-processor.egg-link (link to .)
+Installing audio_manager script to /home/htrice/go2_ros2_curr/install/speech_processor/lib/speech_processor
+Installing speech_synthesizer script to /home/htrice/go2_ros2_curr/install/speech_processor/lib/speech_processor
+Installing tts_node script to /home/htrice/go2_ros2_curr/install/speech_processor/lib/speech_processor
+
+Installed /home/htrice/go2_ros2_curr/build/speech_processor
+running symlink_data
+creating /home/htrice/go2_ros2_curr/install/speech_processor/share/ament_index
+creating /home/htrice/go2_ros2_curr/install/speech_processor/share/ament_index/resource_index
+creating /home/htrice/go2_ros2_curr/install/speech_processor/share/ament_index/resource_index/packages
+symbolically linking /home/htrice/go2_ros2_curr/build/speech_processor/resource/speech_processor -> /home/htrice/go2_ros2_curr/install/speech_processor/share/ament_index/resource_index/packages
+symbolically linking /home/htrice/go2_ros2_curr/build/speech_processor/package.xml -> /home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor

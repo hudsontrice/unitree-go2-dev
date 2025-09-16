@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from go2_interfaces/msg/MotorCmds.msg
+// generated code does not contain a copyright notice
+
+#include "go2_interfaces/msg/MotorCmd.idl"
+
+module go2_interfaces {
+  module msg {
+    struct MotorCmds {
+      sequence<go2_interfaces::msg::MotorCmd> cmds;
+    };
+  };
+};

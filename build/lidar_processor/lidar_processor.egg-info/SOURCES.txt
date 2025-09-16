@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+lidar_processor/__init__.py
+lidar_processor/lidar_to_pointcloud_node.py
+lidar_processor/pointcloud_aggregator_node.py
+lidar_processor.egg-info/PKG-INFO
+lidar_processor.egg-info/SOURCES.txt
+lidar_processor.egg-info/dependency_links.txt
+lidar_processor.egg-info/entry_points.txt
+lidar_processor.egg-info/requires.txt
+lidar_processor.egg-info/top_level.txt
+lidar_processor.egg-info/zip-safe
+resource/lidar_processor

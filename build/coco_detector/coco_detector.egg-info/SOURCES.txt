@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+coco_detector/__init__.py
+coco_detector/coco_detector_node.py
+coco_detector.egg-info/PKG-INFO
+coco_detector.egg-info/SOURCES.txt
+coco_detector.egg-info/dependency_links.txt
+coco_detector.egg-info/entry_points.txt
+coco_detector.egg-info/requires.txt
+coco_detector.egg-info/top_level.txt
+coco_detector.egg-info/zip-safe
+resource/coco_detector

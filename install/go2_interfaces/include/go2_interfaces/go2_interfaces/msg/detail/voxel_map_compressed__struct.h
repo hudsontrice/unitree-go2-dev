@@ -1,0 +1,1 @@
+/home/htrice/go2_ros2_curr/build/go2_interfaces/rosidl_generator_c/go2_interfaces/msg/detail/voxel_map_compressed__struct.h

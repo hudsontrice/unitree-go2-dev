@@ -1,0 +1,3 @@
+[console_scripts]
+go2_driver_node = go2_robot_sdk.main:main
+

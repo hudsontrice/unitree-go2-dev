@@ -1,0 +1,1 @@
+/home/htrice/go2_ros2_curr/build/go2_interfaces/rosidl_generator_py/go2_interfaces/_go2_interfaces_s.ep.rosidl_typesupport_c.c

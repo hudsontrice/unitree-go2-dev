@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from go2_interfaces/msg/SportModeCmd.msg
+// generated code does not contain a copyright notice
+
+#include "go2_interfaces/msg/BmsCmd.idl"
+#include "go2_interfaces/msg/PathPoint.idl"
+
+module go2_interfaces {
+  module msg {
+    typedef float float__2[2];
+    typedef float float__3[3];
+    typedef go2_interfaces::msg::PathPoint go2_interfaces__msg__PathPoint;
+    typedef go2_interfaces__msg__PathPoint go2_interfaces__msg__PathPoint__30[30];
+    struct SportModeCmd {
+      uint8 mode;
+
+      uint8 gait_type;
+
+      uint8 speed_level;
+
+      float foot_raise_height;
+
+      float body_height;
+
+      float__2 position;
+
+      float__3 euler;
+
+      float__2 velocity;
+
+      float yaw_speed;
+
+      go2_interfaces::msg::BmsCmd bms_cmd;
+
+      go2_interfaces__msg__PathPoint__30 path_point;
+    };
+  };
+};

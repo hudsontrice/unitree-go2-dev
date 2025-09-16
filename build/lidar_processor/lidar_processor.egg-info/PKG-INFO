@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lidar-processor
+Version: 1.0.0
+Summary: ROS2 package for processing LiDAR data from Go2 robot
+Home-page: UNKNOWN
+Maintainer: Nuralem Abizov
+Maintainer-email: abizov94@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+
+UNKNOWN
+

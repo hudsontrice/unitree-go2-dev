@@ -1,0 +1,1 @@
+/home/htrice/go2_ros2_curr/src/go2_interfaces/msg/Go2Cmd.msg

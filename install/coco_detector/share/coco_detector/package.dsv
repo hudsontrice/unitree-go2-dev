@@ -1,0 +1,9 @@
+source;share/coco_detector/hook/pythonpath.ps1
+source;share/coco_detector/hook/pythonpath.dsv
+source;share/coco_detector/hook/pythonpath.sh
+source;share/coco_detector/hook/ament_prefix_path.ps1
+source;share/coco_detector/hook/ament_prefix_path.dsv
+source;share/coco_detector/hook/ament_prefix_path.sh
+source;../../build/coco_detector/share/coco_detector/hook/pythonpath_develop.ps1
+source;../../build/coco_detector/share/coco_detector/hook/pythonpath_develop.dsv
+source;../../build/coco_detector/share/coco_detector/hook/pythonpath_develop.sh

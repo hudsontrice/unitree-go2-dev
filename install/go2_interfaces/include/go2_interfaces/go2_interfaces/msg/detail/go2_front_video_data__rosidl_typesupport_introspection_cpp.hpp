@@ -1,0 +1,1 @@
+/home/htrice/go2_ros2_curr/build/go2_interfaces/rosidl_typesupport_introspection_cpp/go2_interfaces/msg/detail/go2_front_video_data__rosidl_typesupport_introspection_cpp.hpp

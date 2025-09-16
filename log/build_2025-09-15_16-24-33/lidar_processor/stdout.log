@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating lidar_processor.egg-info
+writing lidar_processor.egg-info/PKG-INFO
+writing dependency_links to lidar_processor.egg-info/dependency_links.txt
+writing entry points to lidar_processor.egg-info/entry_points.txt
+writing requirements to lidar_processor.egg-info/requires.txt
+writing top-level names to lidar_processor.egg-info/top_level.txt
+writing manifest file 'lidar_processor.egg-info/SOURCES.txt'
+reading manifest file 'lidar_processor.egg-info/SOURCES.txt'
+writing manifest file 'lidar_processor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/htrice/go2_ros2_curr/install/lidar_processor/lib/python3.10/site-packages/lidar-processor.egg-link (link to .)
+Installing lidar_to_pointcloud script to /home/htrice/go2_ros2_curr/install/lidar_processor/lib/lidar_processor
+Installing pointcloud_aggregator script to /home/htrice/go2_ros2_curr/install/lidar_processor/lib/lidar_processor
+
+Installed /home/htrice/go2_ros2_curr/build/lidar_processor
+running symlink_data
+creating /home/htrice/go2_ros2_curr/install/lidar_processor/share/ament_index
+creating /home/htrice/go2_ros2_curr/install/lidar_processor/share/ament_index/resource_index
+creating /home/htrice/go2_ros2_curr/install/lidar_processor/share/ament_index/resource_index/packages
+symbolically linking /home/htrice/go2_ros2_curr/build/lidar_processor/resource/lidar_processor -> /home/htrice/go2_ros2_curr/install/lidar_processor/share/ament_index/resource_index/packages
+symbolically linking /home/htrice/go2_ros2_curr/build/lidar_processor/package.xml -> /home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor

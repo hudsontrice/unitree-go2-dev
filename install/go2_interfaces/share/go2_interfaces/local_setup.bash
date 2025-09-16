@@ -1,0 +1,1 @@
+/home/htrice/go2_ros2_curr/build/go2_interfaces/ament_cmake_environment_hooks/local_setup.bash

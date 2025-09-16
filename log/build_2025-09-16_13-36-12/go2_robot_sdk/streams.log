@@ -1,0 +1,206 @@
+[0.551s] Invoking command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build
+[0.809s] running develop
+[0.979s] Removing /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2-robot-sdk.egg-link (link to .)
+[0.997s] Invoked command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build
+[1.004s] Invoking command in '/home/htrice/go2_ros2_curr/src/go2_robot_sdk': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_robot_sdk build --build-base /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build install --record /home/htrice/go2_ros2_curr/build/go2_robot_sdk/install.log --single-version-externally-managed install_data --force
+[1.232s] running egg_info
+[1.233s] writing ../../build/go2_robot_sdk/go2_robot_sdk.egg-info/PKG-INFO
+[1.233s] writing dependency_links to ../../build/go2_robot_sdk/go2_robot_sdk.egg-info/dependency_links.txt
+[1.233s] writing entry points to ../../build/go2_robot_sdk/go2_robot_sdk.egg-info/entry_points.txt
+[1.233s] writing requirements to ../../build/go2_robot_sdk/go2_robot_sdk.egg-info/requires.txt
+[1.233s] writing top-level names to ../../build/go2_robot_sdk/go2_robot_sdk.egg-info/top_level.txt
+[1.236s] reading manifest file '../../build/go2_robot_sdk/go2_robot_sdk.egg-info/SOURCES.txt'
+[1.236s] adding license file 'LICENSE'
+[1.237s] writing manifest file '../../build/go2_robot_sdk/go2_robot_sdk.egg-info/SOURCES.txt'
+[1.237s] running build
+[1.238s] running build_py
+[1.238s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build
+[1.238s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib
+[1.238s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk
+[1.238s] copying go2_robot_sdk/main.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk
+[1.238s] copying go2_robot_sdk/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk
+[1.238s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application
+[1.238s] copying go2_robot_sdk/application/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application
+[1.238s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain
+[1.239s] copying go2_robot_sdk/domain/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain
+[1.239s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure
+[1.239s] copying go2_robot_sdk/infrastructure/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure
+[1.239s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/presentation
+[1.239s] copying go2_robot_sdk/presentation/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/presentation
+[1.239s] copying go2_robot_sdk/presentation/go2_driver_node.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/presentation
+[1.239s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services
+[1.240s] copying go2_robot_sdk/application/services/robot_data_service.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services
+[1.240s] copying go2_robot_sdk/application/services/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services
+[1.240s] copying go2_robot_sdk/application/services/robot_control_service.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services
+[1.240s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/utils
+[1.240s] copying go2_robot_sdk/application/utils/command_generator.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/utils
+[1.241s] copying go2_robot_sdk/application/utils/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/utils
+[1.241s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math
+[1.241s] copying go2_robot_sdk/domain/math/kinematics.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math
+[1.241s] copying go2_robot_sdk/domain/math/geometry.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math
+[1.241s] copying go2_robot_sdk/domain/math/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math
+[1.241s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities
+[1.241s] copying go2_robot_sdk/domain/entities/robot_config.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities
+[1.241s] copying go2_robot_sdk/domain/entities/robot_data.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities
+[1.241s] copying go2_robot_sdk/domain/entities/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities
+[1.241s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces
+[1.241s] copying go2_robot_sdk/domain/interfaces/robot_data_receiver.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces
+[1.241s] copying go2_robot_sdk/domain/interfaces/robot_controller.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces
+[1.241s] copying go2_robot_sdk/domain/interfaces/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces
+[1.242s] copying go2_robot_sdk/domain/interfaces/robot_data_publisher.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces
+[1.242s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants
+[1.242s] copying go2_robot_sdk/domain/constants/webrtc_topics.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants
+[1.242s] copying go2_robot_sdk/domain/constants/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants
+[1.242s] copying go2_robot_sdk/domain/constants/robot_commands.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants
+[1.242s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors
+[1.242s] copying go2_robot_sdk/infrastructure/sensors/camera_config.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors
+[1.242s] copying go2_robot_sdk/infrastructure/sensors/lidar_decoder.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors
+[1.242s] copying go2_robot_sdk/infrastructure/sensors/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors
+[1.242s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.242s] copying go2_robot_sdk/infrastructure/webrtc/data_decoder.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.242s] copying go2_robot_sdk/infrastructure/webrtc/go2_connection.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.243s] copying go2_robot_sdk/infrastructure/webrtc/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.243s] copying go2_robot_sdk/infrastructure/webrtc/http_client.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.243s] copying go2_robot_sdk/infrastructure/webrtc/webrtc_adapter.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc
+[1.243s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/ros2
+[1.243s] copying go2_robot_sdk/infrastructure/ros2/ros2_publisher.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/ros2
+[1.243s] copying go2_robot_sdk/infrastructure/ros2/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/ros2
+[1.243s] creating /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.243s] copying go2_robot_sdk/infrastructure/webrtc/crypto/__init__.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.243s] copying go2_robot_sdk/infrastructure/webrtc/crypto/encryption.py -> /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.244s] running install
+[1.244s] running install_lib
+[1.245s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk
+[1.245s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application
+[1.245s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services
+[1.245s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services/robot_data_service.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services
+[1.245s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services
+[1.245s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/services/robot_control_service.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services
+[1.245s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/utils
+[1.246s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/utils/command_generator.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/utils
+[1.246s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/utils/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/utils
+[1.246s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/application/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application
+[1.246s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain
+[1.246s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math/kinematics.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math/geometry.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/math/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math
+[1.247s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities/robot_config.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities/robot_data.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/entities/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain
+[1.247s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces/robot_data_receiver.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces/robot_controller.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces
+[1.247s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces
+[1.248s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/interfaces/robot_data_publisher.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces
+[1.248s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants
+[1.248s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants/webrtc_topics.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants
+[1.248s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants
+[1.248s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/domain/constants/robot_commands.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants
+[1.248s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/main.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk
+[1.248s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure
+[1.249s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors/camera_config.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors/lidar_decoder.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/sensors/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors
+[1.249s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/crypto/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/crypto/encryption.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/data_decoder.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/go2_connection.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/http_client.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/webrtc/webrtc_adapter.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure
+[1.249s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/ros2
+[1.249s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/ros2/ros2_publisher.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/ros2
+[1.250s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/infrastructure/ros2/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/ros2
+[1.250s] creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/presentation
+[1.250s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/presentation/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/presentation
+[1.250s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/presentation/go2_driver_node.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/presentation
+[1.250s] copying /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build/lib/go2_robot_sdk/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk
+[1.250s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services/robot_data_service.py to robot_data_service.cpython-310.pyc
+[1.251s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services/__init__.py to __init__.cpython-310.pyc
+[1.251s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/services/robot_control_service.py to robot_control_service.cpython-310.pyc
+[1.252s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/utils/command_generator.py to command_generator.cpython-310.pyc
+[1.252s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/utils/__init__.py to __init__.cpython-310.pyc
+[1.252s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/__init__.py to __init__.cpython-310.pyc
+[1.252s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math/kinematics.py to kinematics.cpython-310.pyc
+[1.253s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math/geometry.py to geometry.cpython-310.pyc
+[1.253s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/math/__init__.py to __init__.cpython-310.pyc
+[1.254s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities/robot_config.py to robot_config.cpython-310.pyc
+[1.254s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities/robot_data.py to robot_data.cpython-310.pyc
+[1.254s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/entities/__init__.py to __init__.cpython-310.pyc
+[1.254s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/__init__.py to __init__.cpython-310.pyc
+[1.255s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces/robot_data_receiver.py to robot_data_receiver.cpython-310.pyc
+[1.255s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces/robot_controller.py to robot_controller.cpython-310.pyc
+[1.255s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces/__init__.py to __init__.cpython-310.pyc
+[1.255s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/interfaces/robot_data_publisher.py to robot_data_publisher.cpython-310.pyc
+[1.256s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants/webrtc_topics.py to webrtc_topics.cpython-310.pyc
+[1.256s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants/__init__.py to __init__.cpython-310.pyc
+[1.256s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/constants/robot_commands.py to robot_commands.cpython-310.pyc
+[1.256s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/main.py to main.cpython-310.pyc
+[1.257s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors/camera_config.py to camera_config.cpython-310.pyc
+[1.257s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors/lidar_decoder.py to lidar_decoder.cpython-310.pyc
+[1.258s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/sensors/__init__.py to __init__.cpython-310.pyc
+[1.259s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto/__init__.py to __init__.cpython-310.pyc
+[1.259s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto/encryption.py to encryption.cpython-310.pyc
+[1.260s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/data_decoder.py to data_decoder.cpython-310.pyc
+[1.260s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/go2_connection.py to go2_connection.cpython-310.pyc
+[1.261s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/__init__.py to __init__.cpython-310.pyc
+[1.262s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/http_client.py to http_client.cpython-310.pyc
+[1.262s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/webrtc_adapter.py to webrtc_adapter.cpython-310.pyc
+[1.263s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/__init__.py to __init__.cpython-310.pyc
+[1.263s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/ros2/ros2_publisher.py to ros2_publisher.cpython-310.pyc
+[1.265s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/ros2/__init__.py to __init__.cpython-310.pyc
+[1.265s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/presentation/__init__.py to __init__.cpython-310.pyc
+[1.265s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/presentation/go2_driver_node.py to go2_driver_node.cpython-310.pyc
+[1.266s] byte-compiling /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/__init__.py to __init__.cpython-310.pyc
+[1.266s] running install_data
+[1.266s] copying resource/go2_robot_sdk -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/ament_index/resource_index/packages
+[1.267s] copying package.xml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk
+[1.267s] copying launch/robot.launch.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/launch
+[1.267s] copying launch/webrtc_web.launch.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/launch
+[1.267s] copying urdf/go2_on_steroids.urdf -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/urdf
+[1.267s] copying urdf/go2_with_realsense.urdf -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/urdf
+[1.267s] copying urdf/go2.urdf -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/urdf
+[1.267s] copying urdf/multi_go2.urdf -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/urdf
+[1.268s] copying dae/calf.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.269s] copying dae/calf_mirror.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.270s] copying dae/base.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.280s] copying dae/thigh_mirror.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.283s] copying dae/hip.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.288s] copying dae/thigh.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.291s] copying dae/foot.dae -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/dae
+[1.292s] copying meshes/front_d_camera.STL -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/meshes
+[1.292s] copying meshes/right_d_camera.STL -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/meshes
+[1.292s] copying meshes/base.STL -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/meshes
+[1.302s] copying meshes/left_d_camera.STL -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/meshes
+[1.302s] copying meshes/lidar_link.STL -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/meshes
+[1.302s] copying config/twist_mux.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.302s] copying config/mapper_params_online_async.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying config/cyclonedds_config.rviz -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying config/single_robot_conf.rviz -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying config/multi_robot_conf.rviz -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying config/nav2_params.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying config/joystick.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/config
+[1.303s] copying calibration/front_camera_720.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/calibration
+[1.303s] copying calibration/front_camera_1080.yaml -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/calibration
+[1.303s] copying external_lib/libvoxel.wasm -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib
+[1.303s] copying external_lib/aioice/src/aioice/turn.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/mdns.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/utils.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/candidate.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/ice.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/__init__.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/stun.py -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] copying external_lib/aioice/src/aioice/py.typed -> /home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/external_lib/aioice
+[1.304s] running install_egg_info
+[1.306s] Copying ../../build/go2_robot_sdk/go2_robot_sdk.egg-info to /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk-0.0.0-py3.10.egg-info
+[1.307s] running install_scripts
+[1.323s] Installing go2_driver_node script to /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/go2_robot_sdk
+[1.324s] writing list of installed files to '/home/htrice/go2_ros2_curr/build/go2_robot_sdk/install.log'
+[1.339s] Invoked command in '/home/htrice/go2_ros2_curr/src/go2_robot_sdk' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/go2_robot_sdk build --build-base /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build install --record /home/htrice/go2_ros2_curr/build/go2_robot_sdk/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,24 @@
+[0.806s] Invoking command in '/home/htrice/go2_ros2_curr/build/coco_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data
+[1.052s] running develop
+[1.225s] running egg_info
+[1.225s] creating coco_detector.egg-info
+[1.226s] writing coco_detector.egg-info/PKG-INFO
+[1.226s] writing dependency_links to coco_detector.egg-info/dependency_links.txt
+[1.226s] writing entry points to coco_detector.egg-info/entry_points.txt
+[1.226s] writing requirements to coco_detector.egg-info/requires.txt
+[1.226s] writing top-level names to coco_detector.egg-info/top_level.txt
+[1.226s] writing manifest file 'coco_detector.egg-info/SOURCES.txt'
+[1.227s] reading manifest file 'coco_detector.egg-info/SOURCES.txt'
+[1.228s] writing manifest file 'coco_detector.egg-info/SOURCES.txt'
+[1.229s] running build_ext
+[1.229s] Creating /home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages/coco-detector.egg-link (link to .)
+[1.230s] Installing coco_detector_node script to /home/htrice/go2_ros2_curr/install/coco_detector/lib/coco_detector
+[1.230s] 
+[1.230s] Installed /home/htrice/go2_ros2_curr/build/coco_detector
+[1.230s] running symlink_data
+[1.230s] creating /home/htrice/go2_ros2_curr/install/coco_detector/share/ament_index
+[1.230s] creating /home/htrice/go2_ros2_curr/install/coco_detector/share/ament_index/resource_index
+[1.231s] creating /home/htrice/go2_ros2_curr/install/coco_detector/share/ament_index/resource_index/packages
+[1.231s] symbolically linking /home/htrice/go2_ros2_curr/build/coco_detector/resource/coco_detector -> /home/htrice/go2_ros2_curr/install/coco_detector/share/ament_index/resource_index/packages
+[1.231s] symbolically linking /home/htrice/go2_ros2_curr/build/coco_detector/package.xml -> /home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector
+[1.264s] Invoked command in '/home/htrice/go2_ros2_curr/build/coco_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data
