@@ -116,8 +116,8 @@ def gen_mov_command(
             topic=OBSTACLE_AVOIDANCE_TOPIC,
         )
     else:
-        # Standard sport mode movement
-        parameters = {"x": x, "y": y, "z": z}
+        # Standard sport mode movement (Unitree expects yaw under key 'yaw')
+        parameters = {"x": x, "y": y, "yaw": z}
         command = create_command_structure(
             api_id=1008,  # Sport mode move command
             parameter=parameters,

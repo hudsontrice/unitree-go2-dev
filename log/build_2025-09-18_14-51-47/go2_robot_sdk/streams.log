@@ -1,0 +1,18 @@
+[0.553s] Invoking command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build --no-deps symlink_data
+[0.811s] running develop
+[0.988s] running egg_info
+[0.988s] writing go2_robot_sdk.egg-info/PKG-INFO
+[0.988s] writing dependency_links to go2_robot_sdk.egg-info/dependency_links.txt
+[0.988s] writing entry points to go2_robot_sdk.egg-info/entry_points.txt
+[0.988s] writing requirements to go2_robot_sdk.egg-info/requires.txt
+[0.988s] writing top-level names to go2_robot_sdk.egg-info/top_level.txt
+[0.991s] reading manifest file 'go2_robot_sdk.egg-info/SOURCES.txt'
+[0.993s] writing manifest file 'go2_robot_sdk.egg-info/SOURCES.txt'
+[0.994s] running build_ext
+[0.995s] Creating /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2-robot-sdk.egg-link (link to .)
+[0.995s] Installing follow_person script to /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/go2_robot_sdk
+[0.995s] Installing go2_driver_node script to /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/go2_robot_sdk
+[0.996s] 
+[0.996s] Installed /home/htrice/go2_ros2_curr/build/go2_robot_sdk
+[0.996s] running symlink_data
+[1.021s] Invoked command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build --no-deps symlink_data

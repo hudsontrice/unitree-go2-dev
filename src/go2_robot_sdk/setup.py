@@ -37,6 +37,7 @@ setup(
     entry_points={
         'console_scripts': [
             'go2_driver_node = go2_robot_sdk.main:main',
+            'follow_person = go2_robot_sdk.follow_person:main',
         ],
     },
 )

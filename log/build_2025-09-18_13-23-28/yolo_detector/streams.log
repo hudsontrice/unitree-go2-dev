@@ -1,0 +1,37 @@
+[0.795s] Invoking command in '/home/htrice/go2_ros2_curr/src/yolo_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_detector build --build-base /home/htrice/go2_ros2_curr/build/yolo_detector/build install --record /home/htrice/go2_ros2_curr/build/yolo_detector/install.log --single-version-externally-managed install_data
+[1.031s] running egg_info
+[1.032s] creating ../../build/yolo_detector/yolo_detector.egg-info
+[1.032s] writing ../../build/yolo_detector/yolo_detector.egg-info/PKG-INFO
+[1.032s] writing dependency_links to ../../build/yolo_detector/yolo_detector.egg-info/dependency_links.txt
+[1.032s] writing entry points to ../../build/yolo_detector/yolo_detector.egg-info/entry_points.txt
+[1.032s] writing requirements to ../../build/yolo_detector/yolo_detector.egg-info/requires.txt
+[1.033s] writing top-level names to ../../build/yolo_detector/yolo_detector.egg-info/top_level.txt
+[1.033s] writing manifest file '../../build/yolo_detector/yolo_detector.egg-info/SOURCES.txt'
+[1.034s] reading manifest file '../../build/yolo_detector/yolo_detector.egg-info/SOURCES.txt'
+[1.034s] writing manifest file '../../build/yolo_detector/yolo_detector.egg-info/SOURCES.txt'
+[1.035s] running build
+[1.035s] running build_py
+[1.035s] creating /home/htrice/go2_ros2_curr/build/yolo_detector/build
+[1.035s] creating /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib
+[1.035s] creating /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib/yolo_detector
+[1.035s] copying yolo_detector/__init__.py -> /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib/yolo_detector
+[1.035s] copying yolo_detector/yolo_detector_node.py -> /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib/yolo_detector
+[1.035s] running install
+[1.035s] running install_lib
+[1.036s] creating /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector
+[1.036s] copying /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib/yolo_detector/__init__.py -> /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector
+[1.036s] copying /home/htrice/go2_ros2_curr/build/yolo_detector/build/lib/yolo_detector/yolo_detector_node.py -> /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector
+[1.036s] byte-compiling /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector/__init__.py to __init__.cpython-310.pyc
+[1.037s] byte-compiling /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector/yolo_detector_node.py to yolo_detector_node.cpython-310.pyc
+[1.037s] running install_data
+[1.037s] creating /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index
+[1.037s] creating /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index/resource_index
+[1.037s] creating /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index/resource_index/packages
+[1.038s] copying resource/yolo_detector -> /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index/resource_index/packages
+[1.038s] copying package.xml -> /home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector
+[1.038s] running install_egg_info
+[1.039s] Copying ../../build/yolo_detector/yolo_detector.egg-info to /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo_detector-0.0.0-py3.10.egg-info
+[1.040s] running install_scripts
+[1.057s] Installing yolo_image_recognition_node script to /home/htrice/go2_ros2_curr/install/yolo_detector/lib/yolo_detector
+[1.057s] writing list of installed files to '/home/htrice/go2_ros2_curr/build/yolo_detector/install.log'
+[1.082s] Invoked command in '/home/htrice/go2_ros2_curr/src/yolo_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_detector build --build-base /home/htrice/go2_ros2_curr/build/yolo_detector/build install --record /home/htrice/go2_ros2_curr/build/yolo_detector/install.log --single-version-externally-managed install_data

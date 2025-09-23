@@ -1,5 +1,6 @@
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/main.py
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/__init__.py
+/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/follow_person.py
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/__init__.py
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/__init__.py
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/__init__.py
@@ -37,6 +38,7 @@
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/webrtc/crypto/encryption.py
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/__pycache__/main.cpython-310.pyc
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/__pycache__/__init__.cpython-310.pyc
+/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/__pycache__/follow_person.cpython-310.pyc
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/application/__pycache__/__init__.cpython-310.pyc
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/domain/__pycache__/__init__.cpython-310.pyc
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk/infrastructure/__pycache__/__init__.cpython-310.pyc
@@ -117,4 +119,5 @@
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk-0.0.0-py3.10.egg-info/requires.txt
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages/go2_robot_sdk-0.0.0-py3.10.egg-info/PKG-INFO
+/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/go2_robot_sdk/follow_person
 /home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/go2_robot_sdk/go2_driver_node

@@ -1,0 +1,457 @@
+[0.083s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.083s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x77099266ef80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77099266e9b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77099266e9b0>>)
+[0.234s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.235s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/htrice/go2_ros2_curr'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/coco_detector) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/coco_detector' with type 'ros.ament_python' and name 'coco_detector'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/docker) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_interfaces) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/go2_interfaces' with type 'ros.ament_cmake' and name 'go2_interfaces'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/go2_robot_sdk) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/go2_robot_sdk' with type 'ros.ament_python' and name 'go2_robot_sdk'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_processor) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_processor' with type 'ros.ament_python' and name 'lidar_processor'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/speech_processor) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/speech_processor' with type 'ros.ament_python' and name 'speech_processor'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_detector) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_detector' with type 'ros.ament_python' and name 'yolo_detector'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(tts_cache) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.275s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/htrice/go2_ros2_curr/install/speech_processor' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.275s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/htrice/go2_ros2_curr/install/lidar_processor' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.275s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/htrice/go2_ros2_curr/install/go2_robot_sdk' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.275s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/htrice/go2_ros2_curr/install/go2_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.275s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/htrice/go2_ros2_curr/install/go2_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.276s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/htrice/go2_ros2_curr/install
+[0.277s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 326 installed packages in /opt/ros/humble
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'coco_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'coco_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/coco_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/coco_detector', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/coco_detector', 'symlink_install': True, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'go2_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.316s] DEBUG:colcon.colcon_core.verb:Building package 'go2_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/go2_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/go2_interfaces', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/go2_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'lidar_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/lidar_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/lidar_processor', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/lidar_processor', 'symlink_install': True, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'yolo_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/yolo_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/yolo_detector', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/yolo_detector', 'symlink_install': True, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'go2_robot_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'go2_robot_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/go2_robot_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/go2_robot_sdk', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/go2_robot_sdk', 'symlink_install': True, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'speech_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'speech_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/htrice/go2_ros2_curr/build/speech_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/htrice/go2_ros2_curr/install/speech_processor', 'merge_install': False, 'path': '/home/htrice/go2_ros2_curr/src/speech_processor', 'symlink_install': True, 'test_result_base': None}
+[0.318s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.319s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.319s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/go2_interfaces' with build type 'ament_cmake'
+[0.319s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/htrice/go2_ros2_curr/src/go2_interfaces'
+[0.321s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.321s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.321s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/coco_detector' with build type 'ament_python'
+[0.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('coco_detector', 'ament_prefix_path')
+[0.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/ament_prefix_path.ps1'
+[0.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/ament_prefix_path.dsv'
+[0.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/ament_prefix_path.sh'
+[0.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.329s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/lidar_processor' with build type 'ament_python'
+[0.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_processor', 'ament_prefix_path')
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/ament_prefix_path.ps1'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/ament_prefix_path.dsv'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/ament_prefix_path.sh'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/yolo_detector' with build type 'ament_python'
+[0.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_detector', 'ament_prefix_path')
+[0.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/ament_prefix_path.ps1'
+[0.334s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/ament_prefix_path.dsv'
+[0.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/ament_prefix_path.sh'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/go2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake /home/htrice/go2_ros2_curr/src/go2_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/htrice/go2_ros2_curr/install/go2_interfaces
+[0.568s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/htrice/go2_ros2_curr/src/coco_detector'
+[0.568s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.568s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.806s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/htrice/go2_ros2_curr/src/lidar_processor'
+[0.806s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.806s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.052s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/htrice/go2_ros2_curr/src/yolo_detector'
+[1.053s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.053s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.367s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index/resource_index/packages/yolo_detector
+[1.367s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.xml
+[1.367s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/htrice/go2_ros2_curr/install/yolo_detector/lib/yolo_detector/yolo_image_recognition_node
+[1.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/yolo_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/yolo_detector/build --no-deps symlink_data --force
+[1.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/coco_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data
+[1.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/lidar_processor': PYTHONPATH=/home/htrice/go2_ros2_curr/build/lidar_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/lidar_processor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/lidar_processor/build --no-deps symlink_data
+[1.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_detector', 'pythonpath_develop')
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/yolo_detector/share/yolo_detector/hook/pythonpath_develop.ps1'
+[1.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/yolo_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/yolo_detector/build --no-deps symlink_data --force
+[1.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/build/yolo_detector/share/yolo_detector/hook/pythonpath_develop.dsv'
+[1.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/yolo_detector/share/yolo_detector/hook/pythonpath_develop.sh'
+[1.831s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector' for CMake module files
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector' for CMake config files
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector/lib'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector/bin'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector/lib/pkgconfig/yolo_detector.pc'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages'
+[1.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_detector', 'pythonpath')
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/pythonpath.ps1'
+[1.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/pythonpath.dsv'
+[1.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/hook/pythonpath.sh'
+[1.836s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/yolo_detector/bin'
+[1.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_detector)
+[1.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.ps1'
+[1.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.dsv'
+[1.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.sh'
+[1.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.bash'
+[1.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector/package.zsh'
+[1.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/yolo_detector/share/colcon-core/packages/yolo_detector)
+[1.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('coco_detector', 'pythonpath_develop')
+[1.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/coco_detector/share/coco_detector/hook/pythonpath_develop.ps1'
+[1.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/coco_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data
+[1.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/build/coco_detector/share/coco_detector/hook/pythonpath_develop.dsv'
+[1.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/coco_detector/share/coco_detector/hook/pythonpath_develop.sh'
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector' for CMake module files
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector' for CMake config files
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector/lib'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector/bin'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector/lib/pkgconfig/coco_detector.pc'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages'
+[1.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('coco_detector', 'pythonpath')
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/pythonpath.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/pythonpath.dsv'
+[1.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/hook/pythonpath.sh'
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/coco_detector/bin'
+[1.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(coco_detector)
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/package.ps1'
+[1.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/package.dsv'
+[1.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/package.sh'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/package.bash'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/coco_detector/share/coco_detector/package.zsh'
+[1.871s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/coco_detector/share/colcon-core/packages/coco_detector)
+[1.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_processor', 'pythonpath_develop')
+[1.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/lidar_processor/share/lidar_processor/hook/pythonpath_develop.ps1'
+[1.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/lidar_processor' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/lidar_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/lidar_processor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/lidar_processor/build --no-deps symlink_data
+[1.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/build/lidar_processor/share/lidar_processor/hook/pythonpath_develop.dsv'
+[1.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/lidar_processor/share/lidar_processor/hook/pythonpath_develop.sh'
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor' for CMake module files
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor' for CMake config files
+[1.898s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor/lib'
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor/bin'
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor/lib/pkgconfig/lidar_processor.pc'
+[1.899s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor/lib/python3.10/site-packages'
+[1.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_processor', 'pythonpath')
+[1.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/pythonpath.ps1'
+[1.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/pythonpath.dsv'
+[1.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/hook/pythonpath.sh'
+[1.901s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/lidar_processor/bin'
+[1.901s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_processor)
+[1.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/package.ps1'
+[1.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/package.dsv'
+[1.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/package.sh'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/package.bash'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/lidar_processor/share/lidar_processor/package.zsh'
+[1.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/lidar_processor/share/colcon-core/packages/lidar_processor)
+[3.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/go2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake /home/htrice/go2_ros2_curr/src/go2_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/htrice/go2_ros2_curr/install/go2_interfaces
+[3.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/go2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake --build /home/htrice/go2_ros2_curr/build/go2_interfaces -- -j16 -l16
+[14.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/go2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake --build /home/htrice/go2_ros2_curr/build/go2_interfaces -- -j16 -l16
+[14.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/go2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake --install /home/htrice/go2_ros2_curr/build/go2_interfaces
+[21.944s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_interfaces)
+[21.945s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces' for CMake module files
+[21.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/go2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/htrice/go2_ros2_curr/install/yolo_detector:/home/htrice/go2_ros2_curr/install/speech_processor:/home/htrice/go2_ros2_curr/install/lidar_processor:/home/htrice/go2_ros2_curr/install/go2_robot_sdk:/home/htrice/go2_ros2_curr/install/coco_detector:/opt/ros/humble /usr/bin/cmake --install /home/htrice/go2_ros2_curr/build/go2_interfaces
+[21.947s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces' for CMake config files
+[21.958s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_interfaces', 'cmake_prefix_path')
+[21.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.ps1'
+[21.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.dsv'
+[21.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.sh'
+[21.961s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib'
+[21.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_interfaces', 'ld_library_path_lib')
+[21.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.ps1'
+[21.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.dsv'
+[21.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.sh'
+[21.963s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/bin'
+[21.963s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib/pkgconfig/go2_interfaces.pc'
+[21.964s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib/python3.10/site-packages'
+[21.964s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/bin'
+[21.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.ps1'
+[21.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.dsv'
+[21.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.sh'
+[21.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.bash'
+[21.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.zsh'
+[21.968s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/go2_interfaces/share/colcon-core/packages/go2_interfaces)
+[21.969s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_interfaces)
+[21.969s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces' for CMake module files
+[21.970s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces' for CMake config files
+[21.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_interfaces', 'cmake_prefix_path')
+[21.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.ps1'
+[21.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.dsv'
+[21.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/cmake_prefix_path.sh'
+[21.981s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib'
+[21.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_interfaces', 'ld_library_path_lib')
+[21.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.ps1'
+[21.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.dsv'
+[21.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/hook/ld_library_path_lib.sh'
+[21.983s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/bin'
+[21.983s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib/pkgconfig/go2_interfaces.pc'
+[21.984s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/lib/python3.10/site-packages'
+[21.984s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_interfaces/bin'
+[21.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.ps1'
+[21.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.dsv'
+[21.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.sh'
+[21.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.bash'
+[21.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_interfaces/share/go2_interfaces/package.zsh'
+[21.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/go2_interfaces/share/colcon-core/packages/go2_interfaces)
+[21.988s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/go2_robot_sdk' with build type 'ament_python'
+[21.989s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_robot_sdk', 'ament_prefix_path')
+[21.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/ament_prefix_path.ps1'
+[21.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/ament_prefix_path.dsv'
+[21.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/ament_prefix_path.sh'
+[21.991s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[21.991s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[21.997s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/htrice/go2_ros2_curr/src/speech_processor' with build type 'ament_python'
+[21.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_processor', 'ament_prefix_path')
+[21.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/ament_prefix_path.ps1'
+[21.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/ament_prefix_path.dsv'
+[21.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/ament_prefix_path.sh'
+[22.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.230s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/htrice/go2_ros2_curr/src/go2_robot_sdk'
+[22.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.475s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/htrice/go2_ros2_curr/src/speech_processor'
+[22.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[22.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[22.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build --no-deps symlink_data
+[22.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/htrice/go2_ros2_curr/build/speech_processor': PYTHONPATH=/home/htrice/go2_ros2_curr/build/speech_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/speech_processor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/speech_processor/build --no-deps symlink_data
+[23.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_processor', 'pythonpath_develop')
+[23.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/speech_processor/share/speech_processor/hook/pythonpath_develop.ps1'
+[23.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/speech_processor' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/speech_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/speech_processor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/speech_processor/build --no-deps symlink_data
+[23.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/build/speech_processor/share/speech_processor/hook/pythonpath_develop.dsv'
+[23.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/speech_processor/share/speech_processor/hook/pythonpath_develop.sh'
+[23.259s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor' for CMake module files
+[23.260s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor' for CMake config files
+[23.261s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor/lib'
+[23.261s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor/bin'
+[23.261s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor/lib/pkgconfig/speech_processor.pc'
+[23.262s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor/lib/python3.10/site-packages'
+[23.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('speech_processor', 'pythonpath')
+[23.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/pythonpath.ps1'
+[23.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/pythonpath.dsv'
+[23.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/hook/pythonpath.sh'
+[23.264s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/speech_processor/bin'
+[23.264s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speech_processor)
+[23.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/package.ps1'
+[23.265s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/package.dsv'
+[23.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/package.sh'
+[23.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/package.bash'
+[23.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/speech_processor/share/speech_processor/package.zsh'
+[23.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/speech_processor/share/colcon-core/packages/speech_processor)
+[23.268s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_robot_sdk', 'pythonpath_develop')
+[23.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath_develop.ps1'
+[23.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/htrice/go2_ros2_curr/build/go2_robot_sdk' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/go2_robot_sdk/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/go2_robot_sdk/build --no-deps symlink_data
+[23.270s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/build/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath_develop.dsv'
+[23.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/build/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath_develop.sh'
+[23.271s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk' for CMake module files
+[23.272s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk' for CMake config files
+[23.274s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib'
+[23.274s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/bin'
+[23.274s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/pkgconfig/go2_robot_sdk.pc'
+[23.274s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/lib/python3.10/site-packages'
+[23.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('go2_robot_sdk', 'pythonpath')
+[23.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath.ps1'
+[23.275s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath.dsv'
+[23.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/hook/pythonpath.sh'
+[23.276s] Level 1:colcon.colcon_core.environment:checking '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/bin'
+[23.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(go2_robot_sdk)
+[23.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/package.ps1'
+[23.277s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/package.dsv'
+[23.278s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/package.sh'
+[23.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/package.bash'
+[23.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/go2_robot_sdk/package.zsh'
+[23.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/htrice/go2_ros2_curr/install/go2_robot_sdk/share/colcon-core/packages/go2_robot_sdk)
+[23.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[23.281s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.286s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.286s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.300s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.300s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/htrice/go2_ros2_curr/install/local_setup.ps1'
+[23.302s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/htrice/go2_ros2_curr/install/_local_setup_util_ps1.py'
+[23.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/htrice/go2_ros2_curr/install/setup.ps1'
+[23.305s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/htrice/go2_ros2_curr/install/local_setup.sh'
+[23.306s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/htrice/go2_ros2_curr/install/_local_setup_util_sh.py'
+[23.307s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/htrice/go2_ros2_curr/install/setup.sh'
+[23.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/htrice/go2_ros2_curr/install/local_setup.bash'
+[23.309s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/htrice/go2_ros2_curr/install/setup.bash'
+[23.311s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/htrice/go2_ros2_curr/install/local_setup.zsh'
+[23.312s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/htrice/go2_ros2_curr/install/setup.zsh'

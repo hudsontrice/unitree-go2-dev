@@ -35,6 +35,7 @@ external_lib/aioice/src/aioice/stun.py
 external_lib/aioice/src/aioice/turn.py
 external_lib/aioice/src/aioice/utils.py
 go2_robot_sdk/__init__.py
+go2_robot_sdk/follow_person.py
 go2_robot_sdk/main.py
 go2_robot_sdk/application/__init__.py
 go2_robot_sdk/application/services/__init__.py

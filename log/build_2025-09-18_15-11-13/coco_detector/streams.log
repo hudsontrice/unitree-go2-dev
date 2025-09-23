@@ -1,0 +1,17 @@
+[0.657s] Invoking command in '/home/htrice/go2_ros2_curr/build/coco_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data
+[0.933s] running develop
+[1.121s] running egg_info
+[1.121s] writing coco_detector.egg-info/PKG-INFO
+[1.121s] writing dependency_links to coco_detector.egg-info/dependency_links.txt
+[1.121s] writing entry points to coco_detector.egg-info/entry_points.txt
+[1.122s] writing requirements to coco_detector.egg-info/requires.txt
+[1.122s] writing top-level names to coco_detector.egg-info/top_level.txt
+[1.123s] reading manifest file 'coco_detector.egg-info/SOURCES.txt'
+[1.124s] writing manifest file 'coco_detector.egg-info/SOURCES.txt'
+[1.125s] running build_ext
+[1.125s] Creating /home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages/coco-detector.egg-link (link to .)
+[1.126s] Installing coco_detector_node script to /home/htrice/go2_ros2_curr/install/coco_detector/lib/coco_detector
+[1.126s] 
+[1.127s] Installed /home/htrice/go2_ros2_curr/build/coco_detector
+[1.127s] running symlink_data
+[1.155s] Invoked command in '/home/htrice/go2_ros2_curr/build/coco_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/coco_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/coco_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/coco_detector/build --no-deps symlink_data

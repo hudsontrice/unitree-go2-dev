@@ -1,0 +1,19 @@
+[1.037s] Invoking command in '/home/htrice/go2_ros2_curr/build/yolo_detector': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/yolo_detector/build --no-deps symlink_data --force
+[1.281s] running develop
+[1.455s] running egg_info
+[1.456s] writing yolo_detector.egg-info/PKG-INFO
+[1.456s] writing dependency_links to yolo_detector.egg-info/dependency_links.txt
+[1.456s] writing entry points to yolo_detector.egg-info/entry_points.txt
+[1.456s] writing requirements to yolo_detector.egg-info/requires.txt
+[1.456s] writing top-level names to yolo_detector.egg-info/top_level.txt
+[1.458s] reading manifest file 'yolo_detector.egg-info/SOURCES.txt'
+[1.458s] writing manifest file 'yolo_detector.egg-info/SOURCES.txt'
+[1.459s] running build_ext
+[1.460s] Creating /home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages/yolo-detector.egg-link (link to .)
+[1.460s] Installing yolo_image_recognition_node script to /home/htrice/go2_ros2_curr/install/yolo_detector/lib/yolo_detector
+[1.460s] 
+[1.460s] Installed /home/htrice/go2_ros2_curr/build/yolo_detector
+[1.461s] running symlink_data
+[1.461s] symbolically linking /home/htrice/go2_ros2_curr/build/yolo_detector/resource/yolo_detector -> /home/htrice/go2_ros2_curr/install/yolo_detector/share/ament_index/resource_index/packages
+[1.461s] symbolically linking /home/htrice/go2_ros2_curr/build/yolo_detector/package.xml -> /home/htrice/go2_ros2_curr/install/yolo_detector/share/yolo_detector
+[1.491s] Invoked command in '/home/htrice/go2_ros2_curr/build/yolo_detector' returned '0': PYTHONPATH=/home/htrice/go2_ros2_curr/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/htrice/go2_ros2_curr/install/yolo_detector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/htrice/go2_ros2_curr/build/yolo_detector/build --no-deps symlink_data --force

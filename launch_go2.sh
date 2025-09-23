@@ -38,8 +38,8 @@ echo -e "${GREEN}✓ Robot reachable${NC}"
 
 # Connection type
 echo "Connection: [1] WebRTC (default) [2] CycloneDDS"
-read -p "Choice [1]: " conn_choice
-conn_choice=${conn_choice:-1}
+# read -p "Choice [1]: " conn_choice
+conn_choice=1 #${conn_choice:-1}
 
 if [ "$conn_choice" = "2" ]; then
     conn_type="cyclonedx"
@@ -57,8 +57,8 @@ echo "  [3] +Detection - Adds object detection capabilities"
 echo "  [4] Full       - Complete setup with Foxglove and detection"
 echo ""
 echo "Launch: [1] Basic [2] +Foxglove [3] +Detection [4] Full"
-read -p "Choice [2]: " launch_choice
-launch_choice=${launch_choice:-2}
+# read -p "Choice [2]: " launch_choice
+launch_choice=4 #${launch_choice:-4}
 
 # Set up environment
 source /opt/ros/humble/setup.bash

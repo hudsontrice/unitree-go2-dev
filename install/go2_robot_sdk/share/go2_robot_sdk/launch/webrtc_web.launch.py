@@ -153,13 +153,14 @@ def generate_launch_description():
                 condition=IfCondition(LaunchConfiguration('enable_foxglove_bridge')),
             ),
 
-            # TTS node
+            # TTS node (in speech_processor package)
             Node(
-                package='go2_robot_sdk',
+                package='speech_processor',
                 executable='tts_node',
                 name='tts_node',
                 parameters=[{
-                    'elevenlabs_api_key': elevenlabs_api_key,
+                    # speech_processor expects 'api_key' and optional 'voice_name'
+                    'api_key': elevenlabs_api_key,
                     'voice_name': voice_name
                 }],
                 on_exit=on_exit,
