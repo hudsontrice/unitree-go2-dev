@@ -173,9 +173,12 @@
 # coco_detector_node.destroy_node()
 # rclpy.shutdown()
 
+rclpy.spin(imageSub)
+rclpy.shutdown()
+
+# YOLOv8 ROS2 node: subscribes to /camera/image_raw, publishes annotated image to /annotated_image
 from sensor_msgs.msg import Image
 import rclpy
-import time
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 from cv_bridge import CvBridge
@@ -183,57 +186,63 @@ import cv2
 from ultralytics import YOLO
 import traceback
 
-class ImageSubscriber(Node):
-
+class YoloDetectorNode(Node):
     def __init__(self):
-        super().__init__('minimal_subscriber')
+        super().__init__('yolo_detector_node')
         camera_qos = QoSProfile(
-            history=HistoryPolicy.SYSTEM_DEFAULT,
+            history=HistoryPolicy.KEEP_LAST,
             depth=10,
-            reliability=ReliabilityPolicy.SYSTEM_DEFAULT,
-            durability=DurabilityPolicy.SYSTEM_DEFAULT
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+            durability=DurabilityPolicy.VOLATILE
         )
-        
         self.subscription = self.create_subscription(
             Image,
-            "/camera/image_raw",
+            '/camera/image_raw',
             self.listener_callback,
             camera_qos)
-        self._image_count = 0
         self.bridge = CvBridge()
-        # NEW: publisher for annotated image
         self.annotated_pub = self.create_publisher(Image, 'annotated_image', 10)
+        self._image_count = 0
+        # Load YOLO model ONCE in __init__
+        try:
+            self.model = YOLO('yolov8n.pt')
+            self.get_logger().info('YOLOv8 model loaded.')
+        except Exception as e:
+            self.get_logger().error(f'Failed to load YOLO model: {e}')
+            self.model = None
 
     def listener_callback(self, msg):
         self._image_count += 1
-        self.get_logger().info(f"Received image {self._image_count}: {msg.width}x{msg.height}, encoding: {msg.encoding}")
-        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
-
-        # Load YOLO model (kept as-is, though moving to __init__ is faster)
-        self.model = YOLO('yolov8n.pt')
-
-        # Run YOLO detection on the image
-        results = self.model(cv_image)
-        result = results[0]
-
-        # Draw bounding boxes on the image
-        annotated_img = result.plot()
-
-        # Publish annotated image (instead of GUI window)
+        self.get_logger().info(f'Received image {self._image_count}: {msg.width}x{msg.height}, encoding: {msg.encoding}')
         try:
+            cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        except Exception as e:
+            self.get_logger().error(f'cv_bridge conversion failed: {e}')
+            return
+        if self.model is None:
+            self.get_logger().error('YOLO model not loaded, skipping detection.')
+            return
+        try:
+            results = self.model(cv_image)
+            result = results[0]
+            annotated_img = result.plot()
             img_msg = self.bridge.cv2_to_imgmsg(annotated_img, encoding='bgr8')
             img_msg.header = msg.header
             self.annotated_pub.publish(img_msg)
+            self.get_logger().info('Published annotated image.')
         except Exception as e:
-            self.get_logger().error(f"Failed to publish annotated image: {e}")
+            self.get_logger().error(f'YOLO detection or publish failed: {e}')
+            self.get_logger().error(traceback.format_exc())
 
-        # GUI disabled for headless environments
-        # cv2.imshow("YOLO Detection", annotated_img)
-        # cv2.waitKey(1)
+def main(args=None):
+    rclpy.init(args=args)
+    node = YoloDetectorNode()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    node.destroy_node()
+    rclpy.shutdown()
 
-
-rclpy.init()
-imageSub = ImageSubscriber()
-rclpy.spin(imageSub)
-imageSub.destroy_node()
-rclpy.shutdown()
+if __name__ == '__main__':
+    main()
