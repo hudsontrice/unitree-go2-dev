@@ -1,15 +1,85 @@
-# unitree_sdk2_python
-Python interface for unitree sdk2
+# Unitree Go2 Python Control & Vision
 
-# Installation
-## Dependencies
+This repository contains Python scripts and utilities for controlling the Unitree Go2 quadruped robot, including high-level movement commands and real-time camera-based person/color tracking using YOLOv8.
+
+## Directory Structure
+
+```
+go2_py/
+├── unitree_sdk2_python/
+│   ├── example/
+│   │   └── go2/
+│   │       ├── high_level/ # Defaults
+│   │       │   ├── go2_sport_client.py
+│   │       │   ├── move_test.py
+│   │       │   ├── fullspin_test.py
+│   │       │   ├── camera_stream.py
+│   │       │   ├── camera_yolo.py
+│   │       └── hudson_scripts/                 # Added by me
+│   │           ├── person_track.py
+│   │           ├── person_track_movement.py
+│   │           ├── spin_detect_people_led.py   # Non-functional
+│   │           ├── color_track.py
+│   │           ├── color_track_advanced.py     # Forked
+│   │           └── person_track_advanced.py    # Forked
+│   └── ... (SDK source files)
+├── yolov8n.pt / yolov8m.pt / yolov8x.pt   # YOLOv8 model weights (place here or in hudson_scripts)
+└── README.md
+```
+
+## Setup Instructions
+
+1. **Install dependencies:**
+	 ```bash
+	 sudo apt update
+	 sudo apt install python3-pip
+	 pip3 install ultralytics opencv-python numpy cyclonedds==0.10.2
+	 ```
+
+2. **Download YOLOv8 weights:**
+	 - In the individual launch scripts, change the variable model to yolov8[n, s, m, l, x]
+	 - Place `yolov8n.pt`, `yolov8m.pt`, or `yolov8x.pt` in `hudson_scripts/`.
+
+## How to Launch
+
+- **Movement and tracking scripts:**
+	```bash
+	cd unitree_sdk2_python/example/go2/hudson_scripts
+	python3 person_track_movement.py
+	# python3 color_track_rotate.py
+	```
+
+- **Camera streaming:**
+	```bash
+	python3 camera_stream.py
+	# python3 camera_yolo.py
+	```
+
+- **Basic movement:**
+	```bash
+	cd unitree_sdk2_python/example/go2/high_level
+	python3 go2_sport_client.py
+	# python3 move_test.py
+	```
+
+## Notes
+
+- Edit configuration variables at the top of each script to set network interface, color presets, model weights, and control gains.
+- For YOLO-based scripts, ensure the correct `.pt` file is present and referenced in the script.
+- For robot control, connect your PC to the robot's network and set the correct interface name in the script.
+
+---
+
+## Extracted from official SDK README
+
+### Installation
+#### Dependencies
 - Python >= 3.8
 - cyclonedds == 0.10.2
 - numpy
 - opencv-python
 
-### Installing from source
-Execute the following commands in the terminal:
+#### Installing from source
 ```bash
 cd ~
 sudo apt install python3-pip
@@ -17,13 +87,13 @@ git clone https://github.com/unitreerobotics/unitree_sdk2_python.git
 cd unitree_sdk2_python
 pip3 install -e .
 ```
-## FAQ
-##### 1. Error when `pip3 install -e .`:
-```bash
+
+#### FAQ: cyclonedds error
+If you see:
+```
 Could not locate cyclonedds. Try to set CYCLONEDDS_HOME or CMAKE_PREFIX_PATH
 ```
-This error mentions that the cyclonedds path could not be found. First compile and install cyclonedds:
-
+Compile and install cyclonedds:
 ```bash
 cd ~
 git clone https://github.com/eclipse-cyclonedds/cyclonedds -b releases/0.10.x 
@@ -31,83 +101,53 @@ cd cyclonedds && mkdir build install && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=../install
 cmake --build . --target install
 ```
-Enter the unitree_sdk2_python directory, set `CYCLONEDDS_HOME` to the path of the cyclonedds you just compiled, and then install unitree_sdk2_python.
+Then set CYCLONEDDS_HOME and install:
 ```bash
 cd ~/unitree_sdk2_python
 export CYCLONEDDS_HOME="~/cyclonedds/install"
 pip3 install -e .
 ```
-For details, see: https://pypi.org/project/cyclonedds/#installing-with-pre-built-binaries
+See: https://pypi.org/project/cyclonedds/#installing-with-pre-built-binaries
 
-# Usage
-The Python sdk2 interface maintains consistency with the unitree_sdk2 interface, achieving robot status acquisition and control through request-response or topic subscription/publishing. Example programs are located in the `/example` directory. Before running the examples, configure the robot's network connection as per the instructions in the document at https://support.unitree.com/home/en/developer/Quick_start.
-## DDS Communication
-In the terminal, execute:
+### Usage
+Example programs are in `/example`. Before running, configure the robot's network as per https://support.unitree.com/home/en/developer/Quick_start.
+
+#### DDS Communication
 ```bash
 python3 ./example/helloworld/publisher.py
-```
-Open a new terminal and execute:
-```bash
 python3 ./example/helloworld/subscriber.py
 ```
-You will see the data output in the terminal. The data structure transmitted between `publisher.py` and `subscriber.py` is defined in `user_data.py`, and users can define the required data structure as needed.
-## High-Level Status and Control
-The high-level interface maintains consistency with unitree_sdk2 in terms of data structure and control methods. For detailed information, refer to https://support.unitree.com/home/en/developer/sports_services.
-### High-Level Status
-Execute the following command in the terminal:
+Data structure is defined in `user_data.py`.
+
+#### High-Level Status and Control
 ```bash
 python3 ./example/high_level/read_highstate.py enp2s0
-```
-Replace `enp2s0` with the name of the network interface to which the robot is connected,.
-### High-Level Control
-Execute the following command in the terminal:
-```bash
 python3 ./example/high_level/sportmode_test.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected. This example program provides several test methods, and you can choose the required tests as follows:
-```python
-test.StandUpDown() # Stand up and lie down
-# test.VelocityMove() # Velocity control
-# test.BalanceAttitude() # Attitude control
-# test.TrajectoryFollow() # Trajectory tracking
-# test.SpecialMotions() # Special motions
-```
-## Low-Level Status and Control
-The low-level interface maintains consistency with unitree_sdk2 in terms of data structure and control methods. For detailed information, refer to https://support.unitree.com/home/en/developer/Basic_services.
-### Low-Level Status
-Execute the following command in the terminal:
+Replace `enp2s0` with your network interface name.
+
+#### Low-Level Status and Control
 ```bash
 python3 ./example/low_level/lowlevel_control.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected. The program will output the state of the right front leg hip joint, IMU, and battery voltage.
-### Low-Level Motor Control
-First, use the app to turn off the high-level motion service (sport_mode) to prevent conflicting instructions.
-Execute the following command in the terminal:
-```bash
-python3 ./example/low_level/lowlevel_control.py enp2s0
-```
-Replace `enp2s0` with the name of the network interface to which the robot is connected. The left hind leg hip joint will maintain a 0-degree position (for safety, set kp=10, kd=1), and the left hind leg calf joint will continuously output 1Nm of torque.
-## Wireless Controller Status
-Execute the following command in the terminal:
+Replace `enp2s0` with your network interface name.
+
+#### Wireless Controller Status
 ```bash
 python3 ./example/wireless_controller/wireless_controller.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected. The terminal will output the status of each key. For the definition and data structure of the remote control keys, refer to https://support.unitree.com/home/en/developer/Get_remote_control_status.
-## Front Camera
-Use OpenCV to obtain the front camera (ensure to run on a system with a graphical interface, and press ESC to exit the program):
+
+#### Front Camera
 ```bash
 python3 ./example/front_camera/camera_opencv.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected.
 
-## Obstacle Avoidance Switch
+#### Obstacle Avoidance Switch
 ```bash
 python3 ./example/obstacles_avoid_switch/obstacles_avoid_switch.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected. The robot will cycle obstacle avoidance on and off. For details on the obstacle avoidance service, see https://support.unitree.com/home/en/developer/ObstaclesAvoidClient
 
-## Light and volume control
+#### Light and volume control
 ```bash
 python3 ./example/vui_client/vui_client_example.py enp2s0
 ```
-Replace `enp2s0` with the name of the network interface to which the robot is connected.T he robot will cycle the volume and light brightness. The interface is detailed at https://support.unitree.com/home/en/developer/VuiClient
