@@ -1,5 +1,9 @@
 import time
 import sys
+import os
+import socket
+import fcntl
+import struct
 from unitree_sdk2py.core.channel import ChannelSubscriber, ChannelFactoryInitialize
 from unitree_sdk2py.idl.default import unitree_go_msg_dds__SportModeState_
 from unitree_sdk2py.idl.unitree_go.msg.dds_ import SportModeState_
@@ -66,15 +70,70 @@ class UserInterface:
 
         print("No matching test option found.")
 
-if __name__ == "__main__":
+def _list_interfaces():
+    try:
+        return [n for n in os.listdir('/sys/class/net') if os.path.isdir(os.path.join('/sys/class/net', n))]
+    except Exception:
+        return []
 
+def _get_iface_ipv4(iface: str):
+    # Minimal ioctl based lookup to avoid extra deps
+    SIOCGIFADDR = 0x8915
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    try:
+        ifreq = struct.pack('256s', iface[:15].encode('utf-8'))
+        res = fcntl.ioctl(sock.fileno(), SIOCGIFADDR, ifreq)
+        ip = struct.unpack('!BBBB', res[20:24])
+        return '.'.join(map(str, ip))
+    except Exception:
+        return None
+    finally:
+        sock.close()
+
+def _auto_select_interface(preferred: str | None):
+    interfaces = _list_interfaces()
+    # 1. If user supplied and exists, keep it
+    if preferred and preferred in interfaces:
+        return preferred, None
+    reason = None
+    if preferred and preferred not in interfaces:
+        reason = f"Provided interface '{preferred}' not found."
+    # 2. Try to find interface in 192.168.123.x (default Unitree subnet)
+    for iface in interfaces:
+        ip = _get_iface_ipv4(iface)
+        if ip and ip.startswith('192.168.123.'):
+            return iface, reason
+    # 3. Fallback: first non-loopback
+    for iface in interfaces:
+        if iface != 'lo':
+            return iface, reason
+    # 4. Nothing usable; return None
+    return None, reason
+
+if __name__ == "__main__":
 
     print("WARNING: Please ensure there are no obstacles around the robot while running this example.")
     input("Press Enter to continue...")
-    if len(sys.argv)>1:
-        ChannelFactoryInitialize(0, sys.argv[1])
-    else:
-        ChannelFactoryInitialize(0)
+
+    user_iface = sys.argv[1] if len(sys.argv) > 1 else None
+    chosen_iface, warn = _auto_select_interface(user_iface)
+
+    try:
+        if chosen_iface:
+            ChannelFactoryInitialize(0, chosen_iface)
+            if warn:
+                print(f"[INFO] {warn} Auto-selected '{chosen_iface}'.")
+            else:
+                print(f"[INFO] Using network interface '{chosen_iface}'.")
+        else:
+            print("[WARN] No suitable network interface found, attempting autodetermine mode (may fail).")
+            ChannelFactoryInitialize(0)
+    except Exception as e:
+        interfaces = _list_interfaces()
+        print("[ERROR] DDS channel initialization failed:", e)
+        print("[HINT] Available interfaces:", ', '.join(interfaces) if interfaces else 'NONE')
+        print("        If your robot is on a specific NIC, re-run: python3 go2_sport_client.py <iface>")
+        sys.exit(1)
 
     test_option = TestOption(name=None, id=None) 
     user_interface = UserInterface()
